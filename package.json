@@ -1,0 +1,26 @@
+{
+  "name": "sparkhub",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SparkHub - 工具导航平台",
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm --filter web build",
+    "preview": "pnpm --filter web preview",
+    "lint": "pnpm --filter web lint",
+    "dev:miniapp": "pnpm --filter miniapp dev:weapp",
+    "build:miniapp": "pnpm --filter miniapp build:weapp"
+  },
+  "keywords": [
+    "tools",
+    "navigation",
+    "sparkhub"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}
+

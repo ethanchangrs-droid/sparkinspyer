@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 基础样式重置 */
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-bg-primary text-text-primary font-body antialiased;
+    min-height: 100vh;
+  }
+
+  /* 滚动条样式 */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-bg-secondary;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-border-default rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-border-hover;
+  }
+
+  /* 选中文字样式 */
+  ::selection {
+    @apply bg-primary-500/30;
+  }
+}
+
+/* 自定义组件样式 */
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .card {
+    @apply bg-bg-secondary rounded-2xl border border-border-default;
+  }
+
+  .card-hover {
+    @apply transition-all duration-200 hover:border-border-hover hover:shadow-hover hover:-translate-y-1;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center px-4 py-2 rounded-xl font-medium transition-all duration-200;
+  }
+
+  .btn-primary {
+    @apply bg-primary-500 text-white hover:bg-primary-600 active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply bg-bg-tertiary text-text-primary hover:bg-bg-elevated active:scale-95;
+  }
+
+  .input {
+    @apply w-full px-4 py-3 bg-bg-tertiary border border-border-default rounded-xl;
+    @apply text-text-primary placeholder:text-text-tertiary;
+    @apply focus:outline-none focus:border-border-focus focus:ring-1 focus:ring-border-focus;
+    @apply transition-all duration-200;
+  }
+}
+
+/* 动画工具类 */
+@layer utilities {
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+  .animation-delay-500 {
+    animation-delay: 500ms;
+  }
+}
+

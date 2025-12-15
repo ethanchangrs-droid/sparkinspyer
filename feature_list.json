@@ -1,0 +1,155 @@
+{
+  "project": "SparkHub",
+  "version": "1.0.0",
+  "createdAt": "2025-12-15T17:13:00+08:00",
+  "updatedAt": "2025-12-15T17:13:00+08:00",
+  "phases": [
+    {
+      "id": "phase-1",
+      "name": "MVP - 导航页 Web 端",
+      "description": "核心导航页功能开发与部署",
+      "features": [
+        {
+          "id": "F-001",
+          "name": "项目初始化",
+          "description": "创建 Monorepo 项目结构，配置 Vite + React + TypeScript + TailwindCSS",
+          "passes": true
+        },
+        {
+          "id": "F-002",
+          "name": "工具数据结构",
+          "description": "创建 tools.json 数据文件和 TypeScript 类型定义",
+          "passes": true
+        },
+        {
+          "id": "F-003",
+          "name": "页面布局",
+          "description": "实现 Header、Footer、Container 等布局组件",
+          "passes": true
+        },
+        {
+          "id": "F-004",
+          "name": "工具卡片组件",
+          "description": "实现 ToolCard 组件，包含图标、名称、简介、标签展示",
+          "passes": true
+        },
+        {
+          "id": "F-005",
+          "name": "工具列表展示",
+          "description": "实现 ToolGrid 组件，响应式网格布局展示工具列表",
+          "passes": true
+        },
+        {
+          "id": "F-006",
+          "name": "工具详情弹窗",
+          "description": "实现 ToolDetailModal 组件，展示详细描述和使用说明",
+          "passes": true
+        },
+        {
+          "id": "F-007",
+          "name": "搜索功能",
+          "description": "实现 SearchBar 组件和实时搜索过滤功能",
+          "passes": true
+        },
+        {
+          "id": "F-008",
+          "name": "收藏功能",
+          "description": "实现收藏/取消收藏功能，使用 Zustand + localStorage 持久化",
+          "passes": true
+        },
+        {
+          "id": "F-009",
+          "name": "最近使用",
+          "description": "实现最近使用记录功能，点击工具时自动记录",
+          "passes": true
+        },
+        {
+          "id": "F-010",
+          "name": "快速访问区",
+          "description": "实现页面顶部的收藏和最近使用快速入口",
+          "passes": true
+        },
+        {
+          "id": "F-011",
+          "name": "工具跳转",
+          "description": "实现点击立即使用跳转到工具子域名",
+          "passes": false
+        },
+        {
+          "id": "F-012",
+          "name": "页面动效",
+          "description": "使用 Framer Motion 实现卡片悬浮、弹窗动画等交互效果",
+          "passes": true
+        },
+        {
+          "id": "F-013",
+          "name": "百度统计集成",
+          "description": "集成百度统计代码，配置自定义事件上报",
+          "passes": false
+        },
+        {
+          "id": "F-014",
+          "name": "EdgeOne 部署",
+          "description": "配置腾讯云 EdgeOne 静态托管和 CDN 加速",
+          "passes": false
+        },
+        {
+          "id": "F-015",
+          "name": "提肛计数器接入",
+          "description": "将提肛计数器配置为子域名并添加到工具列表",
+          "passes": false
+        }
+      ]
+    },
+    {
+      "id": "phase-2",
+      "name": "微信小程序",
+      "description": "开发微信小程序版本",
+      "features": [
+        {
+          "id": "F-016",
+          "name": "小程序项目初始化",
+          "description": "使用 Taro + React 创建小程序项目",
+          "passes": false
+        },
+        {
+          "id": "F-017",
+          "name": "小程序首页",
+          "description": "实现工具列表、收藏、最近使用展示",
+          "passes": false
+        },
+        {
+          "id": "F-018",
+          "name": "小程序搜索页",
+          "description": "实现搜索功能和搜索历史",
+          "passes": false
+        },
+        {
+          "id": "F-019",
+          "name": "小程序工具详情",
+          "description": "实现工具详情页面",
+          "passes": false
+        },
+        {
+          "id": "F-020",
+          "name": "WebView 容器",
+          "description": "实现 WebView 页面用于打开工具",
+          "passes": false
+        },
+        {
+          "id": "F-021",
+          "name": "分享功能",
+          "description": "实现分享到微信好友和朋友圈",
+          "passes": false
+        },
+        {
+          "id": "F-022",
+          "name": "小程序审核上线",
+          "description": "提交小程序审核并发布",
+          "passes": false
+        }
+      ]
+    }
+  ]
+}
+
