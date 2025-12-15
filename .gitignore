@@ -35,6 +35,10 @@ coverage/
 *.tgz
 *.zip
 
+# Documentation and logs (managed separately)
+docs/
+log/
+
 # Taro miniapp
 apps/miniapp/dist/
 
