@@ -20,6 +20,7 @@ export interface Tool {
   sortOrder: number;
   createdAt: string;
   updatedAt: string;
+  url?: string;  // 可选：自定义工具 URL，优先于子域名规则
 }
 
 // tools.json 文件结构

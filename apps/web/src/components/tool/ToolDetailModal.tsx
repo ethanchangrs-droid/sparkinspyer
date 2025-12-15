@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useUserStore } from '@/store';
-import { getToolUrl } from '@/utils/navigation';
+import { openTool } from '@/utils/navigation';
 import type { Tool } from '@/types';
 
 interface ToolDetailModalProps {
@@ -48,7 +48,7 @@ export default function ToolDetailModal({
   const handleUse = () => {
     if (!tool) return;
     addRecentlyUsed(tool.id);
-    window.open(getToolUrl(tool.slug), '_blank');
+    openTool(tool);
   };
 
   if (!tool) return null;
