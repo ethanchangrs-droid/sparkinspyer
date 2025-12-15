@@ -73,7 +73,7 @@
           "id": "F-011",
           "name": "工具跳转",
           "description": "实现点击立即使用跳转到工具子域名",
-          "passes": false
+          "passes": true
         },
         {
           "id": "F-012",
