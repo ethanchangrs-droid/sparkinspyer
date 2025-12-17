@@ -91,13 +91,13 @@
           "id": "F-014",
           "name": "EdgeOne 部署",
           "description": "配置腾讯云 EdgeOne 静态托管和 CDN 加速",
-          "passes": false
+          "passes": true
         },
         {
           "id": "F-015",
           "name": "提肛计数器接入",
           "description": "将提肛计数器配置为子域名并添加到工具列表",
-          "passes": false
+          "passes": true
         }
       ]
     },
